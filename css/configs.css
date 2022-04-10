@@ -1,0 +1,54 @@
+@import url(../fonts/DroidSans.ttf);
+
+.value-dificult,
+.value-velocity,
+.value-level,
+.value-mode {
+  text-align: center;
+  font-family: "Paragrafo";
+  font-weight: normal;
+  font-size: 1.3em;
+  width: 300px;
+  height: 15px;
+  line-height: 20px;
+  margin: 0px auto;
+  color: #64b6ec;
+}
+
+.container-input {
+  width: 750px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 300px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: linear-gradient(rgb(6, 11, 92), rgb(68, 111, 206));
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #e74c3c;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
+}

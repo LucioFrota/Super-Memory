@@ -1,0 +1,875 @@
+@font-face {
+  font-family: Paragrafo;
+  src: url(../fonts/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: Display;
+  src: url(../fonts/DroidSans.ttf);
+}
+
+@font-face {
+  font-family: Level;
+  src: url(../fonts/Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+  font-family: Titulo;
+  src: url(../fonts/Royalacid_o.ttf);
+}
+
+@font-face {
+  font-family: Btn;
+  src: url(../fonts/Ubuntu-B.ttf);
+}
+
+.body {
+  margin: 0;
+  background-image: linear-gradient(
+    to top,
+    #5fedf7,
+    #08aeeb,
+    #22058b,
+    #630466,
+    #a8051a 60%
+  );
+  display: contents;
+  width: max-content;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: 0;
+  overflow-anchor: none;
+  overflow: auto;
+  text-decoration: none;
+  position: fixed;
+}
+
+body {
+  text-decoration: none;
+  position: fixed;
+}
+
+html {
+  background-image: linear-gradient(to top, #050118, #22058b 60%);
+  background-color: #050118;
+}
+
+h2 {
+  text-align: left;
+  font-family: Paragrafo;
+  font-size: x-large;
+  letter-spacing: 1px;
+  position: absolute;
+}
+#div-congrats {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(5, 1, 24);
+  color: coral;
+  z-index: 25;
+}
+#img-congrats {
+  margin-top: -2rem;
+  width: 18rem;
+}
+#div-center-congrats {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 1, 24, 0.858);
+  color: burlywood;
+  text-align: center;
+  top: 30%;
+  z-index: 25;
+}
+#div-h1-congrats {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 1, 24, 0.858);
+  color: burlywood;
+  text-align: center;
+  z-index: 25;
+}
+#h1-congrats,
+#h1-congrats1 {
+  position: absolute;
+}
+#h1-congrats1 {
+  font-weight: 900 !important;
+  font-size: 50pt !important;
+  font-family: "Btn" !important;
+  top: -2rem;
+}
+#h1-congrats {
+  font-family: sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 70pt !important;
+
+  top: 6rem;
+}
+#h1-time-congrats {
+  font-family: "Btn" !important;
+  font-weight: 900;
+  font-size: 6rem;
+  margin-top: 0px;
+  color: cyan;
+}
+#control-two {
+  top: auto;
+  bottom: 4px !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  background-color: rgba(5, 1, 24, 0.411);
+  width: 60%;
+  color: aquamarine;
+}
+
+#h2-0,
+#h2-1 {
+  top: -10px;
+}
+
+#h2-2,
+#h2-3 {
+  top: auto;
+  bottom: 0px;
+}
+
+.h2-left {
+  left: 5rem;
+}
+
+.h2-right {
+  right: 5rem;
+}
+
+.main-game {
+  width: 100vh;
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.super-genius-three {
+  display: grid;
+  grid-template-areas: "blue green " " orange red ";
+  gap: 10px;
+  background-color: rgb(5, 1, 24);
+  border-radius: 100%;
+  width: 800px;
+  height: 800px;
+}
+
+.super-genius-two {
+  position: absolute;
+  display: grid;
+  grid-template-areas: "red orange " "green blue";
+  gap: 10px;
+  border: solid 10px rgb(5, 1, 24);
+  background-color: rgb(5, 1, 24);
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+}
+
+.super-genius-one {
+  position: absolute;
+  display: grid;
+  grid-template-areas: "blue green " "orange red";
+  gap: 10px;
+  border: solid 10px rgb(5, 1, 24);
+  background-color: rgb(5, 1, 24);
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+#center {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-image: url(/img/logoGooCenter.png) !important;
+  background-size: contain;
+  background-color: rgb(5, 1, 24);
+  display: flex;
+  cursor: pointer;
+}
+#center:hover {
+  border: solid 1px !important;
+  border-color: rgb(133, 130, 4) !important;
+  background-color: rgb(63, 62, 2) !important;
+}
+
+.red-One {
+  grid-area: red;
+  background-color: red;
+  border-bottom-right-radius: 100%;
+  opacity: 0.8;
+}
+
+.orange-One {
+  grid-area: orange;
+  background-color: orange;
+  border-bottom-left-radius: 100%;
+  opacity: 0.8;
+}
+
+.green-One {
+  grid-area: green;
+  background-color: green;
+  border-top-right-radius: 100%;
+  opacity: 0.8;
+}
+
+.blue-One {
+  grid-area: blue;
+  background-color: blue;
+  border-top-left-radius: 100%;
+  opacity: 0.8;
+}
+
+/* --------------------------- */
+.red-two {
+  grid-area: red;
+  background-color: red;
+  border-top-left-radius: 100%;
+  opacity: 0.8;
+}
+
+.orange-two {
+  grid-area: orange;
+  background-color: orange;
+  border-top-right-radius: 100%;
+  opacity: 0.8;
+}
+
+.green-two {
+  grid-area: green;
+  background-color: green;
+  border-bottom-left-radius: 100%;
+  opacity: 0.8;
+}
+
+.blue-two {
+  grid-area: blue;
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  opacity: 0.8;
+}
+
+/* ------------------------- */
+
+.blue-three {
+  grid-area: blue;
+  background-color: blue;
+  border-top-left-radius: 100%;
+  opacity: 0.8;
+}
+
+.green-three {
+  grid-area: green;
+  background-color: green;
+  border-top-right-radius: 100%;
+  opacity: 0.8;
+}
+
+.orange-three {
+  grid-area: orange;
+  background-color: orange;
+  border-bottom-left-radius: 100%;
+  opacity: 0.8;
+}
+
+.red-three {
+  grid-area: red;
+  background-color: red;
+  border-bottom-right-radius: 100%;
+  opacity: 0.8;
+}
+
+.selected {
+  opacity: 1;
+  background-color: yellow;
+}
+
+.selected2 {
+  opacity: 1;
+  background-color: rgb(0, 238, 255);
+}
+
+#bnt {
+  width: 50px;
+  height: 50px;
+}
+
+#fundo {
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../img/formas01.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1021; */
+}
+
+#tela {
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../img/formas02.png); */
+  background-size: cover;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.back-three {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 500px;
+  }
+
+  to {
+    background-position: 0px;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: 500px;
+  }
+}
+
+.back-three {
+  background-size: 100% 100%;
+}
+
+#tela {
+  background-size: 100% 100%;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#fundo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.div-p-credits {
+  margin: 5rem;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: #7ebbbe;
+  line-height: 1.5;
+}
+.div-p-credits a {
+  color: #2e83b4;
+}
+.div-p-credits a:hover {
+  color: coral;
+}
+.h1-credits {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #7ebbbe;
+}
+
+.content-credits {
+  position: fixed;
+  display: flow-root;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  min-height: -webkit-fill-available;
+  z-index: -2;
+  background-color: rgb(38, 33, 63);
+}
+.btn-credits {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+/* --------------Média Queries----------- */
+/* For 1024 Resolution */
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+  .content {
+    left: 3% !important;
+    width: 95% !important;
+  }
+  #container-pop-play {
+    width: 85% !important;
+  }
+  #img-aba-content-play {
+    width: 60px !important;
+    left: 0.5rem !important;
+  }
+  .h1-pop-play {
+    font-size: 12pt !important;
+  }
+  .p-pop {
+    font-size: 10pt !important;
+    line-height: 1.3 !important;
+  }
+  #ul-nav-regras {
+    left: 0rem !important;
+    width: 95% !important;
+  }
+  #ul-nav-regras li {
+    padding: 2px !important;
+  }
+  .abasPagination > a {
+    width: 50px !important;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 8rem !important;
+    top: 23rem !important;
+  }
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  article {
+    margin-top: -20px !important;
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  ul {
+    list-style: none !important;
+    padding-inline-start: 30px;
+  }
+  #secpag-1,
+  #secpag-2 {
+    width: 90% !important;
+  }
+  #secpag-1 hr,
+  #secpag-2 hr {
+    margin-left: 2rem !important;
+  }
+  #img-memory-mask {
+    width: 20rem !important;
+  }
+  .value-dificult,
+  .value-velocity,
+  .value-level,
+  .value-mode {
+    width: 150px !important;
+  }
+  input[type="range"] {
+    width: 150px !important;
+  }
+  .content-credits {
+    width: 95% !important;
+    left: 0.7rem !important;
+  }
+  .div-p-credits {
+    margin: 1rem !important;
+    margin-top: 12rem !important;
+    line-height: 1.8rem !important;
+  }
+  .div-p-credits ul {
+    margin-left: -10px !important;
+  }
+  #ul-abas {
+    width: 90% !important;
+  }
+  #h1-rules {
+    font-size: larger !important;
+  }
+  .li-rules {
+    font-size: smaller !important;
+  }
+
+  .p-pop-rules {
+    font-size: smaller !important;
+    line-height: 1.5 !important;
+    width: 22rem !important;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 11rem !important;
+    margin-top: 2rem;
+    width: 80px !important;
+  }
+  #imgInit-super-memory {
+    display: none !important;
+    /* width: 20rem !important; */
+  }
+
+  #div-h1-mensage {
+    width: 100% !important;
+    height: 12vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #control-two {
+    width: inherit;
+    height: 70px !important;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #div-h1-game-over {
+    font-size: small !important;
+  }
+  #img-super-memory {
+    width: 350px !important;
+    top: 22rem !important;
+  }
+  #section-game-over {
+    width: 100% !important;
+  }
+  .h1-game-over {
+    top: 5rem !important;
+    font-size: 55px !important;
+  }
+  .super-genius-three {
+    width: 450px !important;
+    height: 450px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  .super-genius-two {
+    width: 350px !important;
+    height: 350px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  .super-genius-one {
+    width: 200px !important;
+    height: 200px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+    font-size: 40pt !important;
+  }
+  #h1-congrats1 {
+    font-size: 30pt !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #img-aba-content-play {
+    width: 80px !important;
+    left: 10rem !important;
+  }
+  .h1-pop-play {
+    font-size: 15pt;
+  }
+  .p-pop {
+    font-size: 10pt !important;
+    line-height: 1.3;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 15rem !important;
+    top: 17rem !important;
+  }
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  article {
+    margin-top: -20px !important;
+  }
+  #h1-rules {
+    font-size: larger !important;
+  }
+  .li-rules {
+    font-size: smaller !important;
+  }
+  .p-pop-rules {
+    font-size: smaller !important;
+    line-height: 1.5 !important;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 5rem !important;
+    width: 80px !important;
+  }
+  #imgInit-super-memory {
+    width: 20rem !important;
+  }
+
+  #div-h1-mensage {
+    width: 70% !important;
+    height: 7vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #control-two {
+    height: 70px;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #div-h1-game-over {
+    font-size: large !important;
+  }
+  #img-super-memory {
+    width: 450px !important;
+    top: 22rem !important;
+  }
+  #section-game-over {
+    width: 60% !important;
+  }
+  .super-genius-three {
+    width: 700px !important;
+    height: 700px !important;
+  }
+  .super-genius-two {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .super-genius-one {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+  }
+}
+/* For 1366 Resolution */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) and (orientation: landscape) {
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  #control-two {
+    height: 70px;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #img-aba-content-play {
+    width: 80px !important;
+    left: 10rem !important;
+  }
+  .h1-pop-play {
+    font-size: 20pt;
+    color: coral;
+  }
+  .p-pop {
+    font-size: smaller !important;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 19rem !important;
+    top: 17rem !important;
+  }
+  .p-pop-rules {
+    font-size: smaller !important;
+    line-height: 1.5 !important;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 12em !important;
+    width: 100px !important;
+  }
+  #imgInit-super-memory {
+    width: 20rem !important;
+  }
+  #div-h1-mensage {
+    width: 70% !important;
+    height: 7vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #div-h1-game-over {
+    font-size: large !important;
+  }
+  #img-super-memory {
+    width: 450px !important;
+    top: 22rem !important;
+  }
+  .super-genius-three {
+    width: 700px !important;
+    height: 700px !important;
+  }
+  .super-genius-two {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .super-genius-one {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1680px) {
+  /* STYLES GO HERE */
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  #control-two {
+    height: 70px;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #img-aba-content-play {
+    width: 80px !important;
+    left: 10rem !important;
+  }
+  .h1-pop-play {
+    font-size: 20pt;
+    color: coral;
+  }
+  .p-pop {
+    font-size: smaller !important;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 19rem !important;
+    top: 17rem !important;
+  }
+  .p-pop-rules {
+    font-size: smaller !important;
+    line-height: 1.5 !important;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 12em !important;
+    width: 100px !important;
+  }
+  #imgInit-super-memory {
+    width: 20rem !important;
+  }
+  #div-h1-mensage {
+    width: 70% !important;
+    height: 7vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #div-h1-game-over {
+    font-size: large !important;
+  }
+  #img-super-memory {
+    width: 450px !important;
+    top: 22rem !important;
+  }
+  .super-genius-three {
+    width: 800px !important;
+    height: 800px !important;
+  }
+  .super-genius-two {
+    width: 600px !important;
+    height: 600px !important;
+  }
+  .super-genius-one {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Memory</title>
+    <link rel="icon" href="/img/IcoSuperGenius.png">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styleControls.css" />
+    <link rel="stylesheet" type="text/css" href="/css/structure.css" />
+    <link rel="stylesheet" type="text/css" href="/css/configs.css" />
+
+
+</head>
+
+<body class="body">
+    <div class="div-audio" id="div-audio" style="display:none;">
+
+    </div>
+
+    <div class="div-congrats" id="div-congrats">
+        <div class="div-h1-congrats" id="div-h1-congrats">
+            <h1 id="h1-congrats1">Parabéns!!!</h1>
+            <h1 id="h1-congrats"></h1>
+        </div>
+
+        <div class="div-center-congrats" id="div-center-congrats">
+            <h1 id="h1-time-congrats"></h1>
+            <img src="/img/logoGoo2.png" alt="logo" id="img-congrats">
+        </div>
+
+
+    </div>
+    <div class="back-three" id="back-three">
+        <div class="control" id="control">
+            <img src="/img/SuperGeniusLogo.png" alt="logo" id="logo">
+            <div class="div-h1-mensage" id="div-h1-mensage">
+                <h1 id="h1-level"></h1>
+                <img src="/img/super-memory.png" alt="Name-SuperMemory" id="imgInit-super-memory">
+
+                <h1 id="h1-nivSequence"></h1>
+            </div>
+
+
+        </div><!-- --------------FIM DIV CONTROL--------------- -->
+        <div class="control" id="control-two">
+            <h2 class="h2-left" id="h2-0"></h2>
+            <h2 class="h2-right" id="h2-1"></h2>
+            <h2 class="h2-left" id="h2-2"></h2>
+            <h2 class="h2-right" id="h2-3"></h2>
+        </div>
+
+        <div id="tela">
+
+            <div class="fundo" id="fundo">
+                <div class="main-game" id="main-game">
+                    <div class="super-genius-three">
+                        <div class="red-three" id="red-three"></div>
+                        <div class="orange-three" id="orange-three"></div>
+                        <div class="green-three" id="green-three"></div>
+                        <div class="blue-three" id="blue-three"></div>
+                    </div>
+
+                    <div class="super-genius-two">
+                        <div class="blue-two" id="blue-two"></div>
+                        <div class="green-two" id="green-two"></div>
+                        <div class="orange-two" id="orange-two"></div>
+                        <div class="red-two" id="red-two"></div>
+                    </div>
+                    <div class="super-genius-one">
+                        <div type="button" class="red-One" id="red-One"></div>
+                        <div class="orange-One" id="orange-One"></div>
+                        <div class="green-One" id="green-One"></div>
+                        <div class="blue-One" id="blue-One"></div>
+                    </div>
+                    <div id="center" onclick="fullScreen()">
+                        <!-- <img src="/img/logoGooCenter.png" alt="logo" id="img-center"> -->
+                    </div>
+
+                </div><!-- -------------------------FIM DIV MAIN GAME------------------------ -->
+
+                <div class="div-game-over" id="div-game-over">
+                    <div class="fundo-game-over">
+
+                        <h1 class="h1-game-over">Game Over</h1>
+                        <section id="section-game-over">
+                            <div class="div-h1-game-over" id="div-h1-game-over">
+                                <h1 id="h1-time"></h1>
+                                <h1 id="h1-rest"></h1>
+                                <h1 id="h1-sequence"></h1>
+                            </div>
+
+                        </section>
+                        <div class="div-btn-restart" id="div-btn-restart">
+                            <button class="btn-restart" id="btn-restart">JOGAR NOVAMENTE</button>
+                        </div>
+                        <footer>
+                            <div class="footer" id="footer"></div>
+
+                        </footer>
+                    </div>
+                </div><!-- -------------------------FIM DIV GAME OVER------------------------ -->
+
+
+                <div class="abas-prim" id="abas-prim">
+
+                    <ul class="ul-abas" id="ul-abas">
+                        <!-- Primeira aba -->
+                        <li class="aba" id="aba-1" onclick="contentPlay(0)">
+                            <a href="#aba-1">PLAY GAME</a>
+                            <img src="/img/SuperGeniusLogo.png" alt="Imagem-Memory" id="img-aba-content-play">
+                            <div class="content" id="content-play">
+                            </div><!-- -------------------------FIM DIV CONTENT PLAY------------------------ -->
+
+                            <div class="pop-config" id="pop-configuracoes">
+
+                                <input type="button" value="Configurações" id="input-config" onclick="config(0, 0)" />
+
+                            </div><!-- -------------------------FIM DIV POP CONGIGURAÇÕES------------------------ -->
+                            <div class="pop-config-ghost" id="pop-config-ghost">
+                                <div class="div-img-mask" id="div-img-mask">
+                                    <img src="/img/SuperGeniusLogo.png" alt="Imagem-Memory" id="img-logo-mask">
+                                    <img src="/img/super-memory.png" alt="Imagem-Memory" id="img-memory-mask">
+                                </div>
+
+                                <div class="pop-config" id="container-selects">
+
+                                    <div class="selects" id="selects">
+                                        <div class="container-input" id="container-input1">
+                                            <div class="value-dificult">Dificuldade</div>
+                                            <input type="range" min="0" max="40" step="4" value="0" id="input1"
+                                                onchange="activeInput('input1', '.value-dificult')">
+                                        </div>
+
+
+                                        <div class="container-input" id="container-input2">
+                                            <div class="value-velocity">Velocidade</div>
+                                            <input type="range" min="0" max="10" step="0" value="0" id="input2"
+                                                onchange="activeInput('input2', '.value-velocity')">
+                                        </div>
+
+
+                                    </div>
+                                    <!---------------------------FIM DIV SELECTS-------------------------->
+                                    <div class="selects" id="selects-two">
+
+                                        <div class="container-input" id="container-input3">
+                                            <div class="value-level">Nível</div>
+                                            <input type="range" min="0" max="3" step="1" value="0" id="input3"
+                                                onchange="activeInput('input3', '.value-level')">
+                                        </div>
+
+                                        <div class="container-input" id="container-input4">
+                                            <div class="value-mode">Modo</div>
+                                            <input type="range" min="0" max="2" step=1 value="0" id="input4"
+                                                onchange="activeInput('input4','.value-mode')">
+                                        </div>
+
+
+                                    </div>
+                                    <!---------------------------FIM DIV SELECTS TWO-------------------------->
+                                    <div class="btn-input-submit" id="btn-input-submit">
+                                        <input type="button" value="Salvar" id="input-submit" onclick="config(1)" />
+                                    </div>
+
+                                </div>
+                                <!---------------------------FIM DIV CONTAINER SELECTS-------------------------->
+                            </div>
+                        </li>
+                        <!-- Segunda aba -->
+                        <li class="aba" id="aba-2" onclick="contentPlay(1)">
+                            <a href="#aba-2">REGRAS E TIPOS</a>
+                            <div class="content" id="content-rules">
+
+                                <ul id="ul-nav-regras">
+                                    <li class="abasPagination" id="lipag-1" onclick="subPagination(0)"> <a
+                                            href="#lipag-1">1</a>
+                                        <div class="divPagination" id="secpag-1"></div>
+                                    </li>
+                                    <li class="abasPagination" id="lipag-2" onclick="subPagination(1)"> <a
+                                            href="#lipag-2">2</a>
+                                        <div class="divPagination" id="secpag-2"></div>
+                                    </li>
+                                    <li class="abasPagination" id="lipag-3" onclick="subPagination(2)"> <a
+                                            href="#lipag-3">3</a>
+                                        <div class="divPagination" id="secpag-3"></div>
+                                    </li>
+                                    <li class="abasPagination" id="lipag-4" onclick="subPagination(3)"> <a
+                                            href="#lipag-4">4</a>
+                                        <div class="divPagination" id="secpag-4"></div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <!-- Terceira aba -->
+                        <li class="aba" id="aba-initial">
+                            <img src="/img/SuperGeniusLogo.png" alt="Imagem-Memory" id="img-aba-logoMemory">
+                            <div class="content" id="content-init">
+                                <img src="/img/super-memory.png" alt="Name-SuperMemory" id="img-super-memory">
+                                <div class="div-btn-init">
+
+                                    <button class="btn-restart" id="btn-init" onclick="presentation(1)"><img
+                                            src="/img/logoGoo2.png" alt="Logo-GooTopps" class="logo-goo"
+                                            id="logo-goo"></button>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                    </ul>
+                    <footer>
+
+                        <div class="footer" id="footer-rules"></div>
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim Div Three -->
+    <!-- ----------------------------------------------------------- -->
+
+    <script type="text/javascript" src="/js/soundsJS.js"></script>
+    <script type="text/javascript" src="/js/fragments.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/config.js"></script>
+    <!-- <script type="text/javascript" src="/js/codeTeste.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script> -->
+
+    <!-- <script
+    type="text/javascript"
+    src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script> -->
+</body>
+
+</html>

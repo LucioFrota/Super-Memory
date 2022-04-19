@@ -41,7 +41,7 @@ Ademais:
 
   ### Enquantto isso, alguns dos projetos constantes aqui no GitHub estarão em testes na nossa página:
   - 👉Temporário - [Gootopps.epizy.com](https://gootopps.epizy.com/) .
-  - 👉Em construção - [Gootopps.com](https://gootopps.com/) .
+  - 👉Em construção - [Gootopps.com](https://gootopps.com/projects/games/super-memory/memory.html) .
 
   Tô aos poucos arrumando as coisas e nosso GitHub ainda terá muitas novidades.
 

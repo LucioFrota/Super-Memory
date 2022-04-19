@@ -85,11 +85,11 @@ Quem ficar sozinho no jogo (com uma ou duas cores) será o ganhador.
 </article>`;
 //---------------------------------------------------------------------
 var footerEnd = `<div id="div-p-rules">
-<a href = "https://github.com/LucioFrota" target="_blank"> <img src="/img/icoGitHub.png" alt="Name-IconeGitHub" id="img-ico-github"> </a>
-<a href= "https://dio.me/" target="_blank"> <img src="/img/icoDio.png" alt="Name-IconeDio" id="img-ico-dio"> </a>
-<a href="https://www.linkedin.com/in/lucio-frota/" target="_blank"> <img src="/img/icoLinkedin.png" alt="Name-IconeLinkedin" id="img-ico-Linkedin"> </a>
+<a href = "https://github.com/LucioFrota" target="_blank"> <img src="img/icoGitHub.png" alt="Name-IconeGitHub" id="img-ico-github"> </a>
+<a href= "https://dio.me/" target="_blank"> <img src="img/icoDio.png" alt="Name-IconeDio" id="img-ico-dio"> </a>
+<a href="https://www.linkedin.com/in/lucio-frota/" target="_blank"> <img src="img/icoLinkedin.png" alt="Name-IconeLinkedin" id="img-ico-Linkedin"> </a>
 <p> Super Memory 2022 <a href = "https://www.linkedin.com/in/lucio-frota/" target="_blank"> By Lúcio Frota </a></p>
-<p>  <a href="/pages/credits.html"> Credits and Thanks </a></p>
+<p>  <a href="pages/credits.html"> Credits and Thanks </a></p>
 <p> <a href= "https://dio.me/" target="_blank"> Digital Innovation One </a></p></div>`;
 
 var varContentPlay = `<div class= "pop-class" id= "pop-play"> 

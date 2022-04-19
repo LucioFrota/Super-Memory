@@ -20,7 +20,7 @@ let listFileAudio = [
 ];
 function randomFile(elemSound, nameFile) {
   let num = Math.ceil(Math.random() * elemSound);
-  let src = "../sounds/" + nameFile + num + ".mp3";
+  let src = "./sounds/" + nameFile + num + ".mp3";
   return src;
 }
 

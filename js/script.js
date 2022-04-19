@@ -628,7 +628,7 @@ function presentation(num) {
 }
 function randomBack(element, nameFile, total, file) {
   let num = Math.ceil(Math.random() * total);
-  element.style.backgroundImage = "url('../img/" + nameFile + num + file + "')";
+  element.style.backgroundImage = "url('./img/" + nameFile + num + file + "')";
 }
 
 function effectBack(num) {

@@ -446,6 +446,195 @@ img:hover {
   margin-top: 5rem;
 }
 /* --------------Média Queries----------- */
+@media only screen and (min-device-width: 480px) and (max-device-width: 960px) {
+  .content {
+    position: fixed !important;
+    left: 3% !important;
+    width: 95% !important;
+    height: -webkit-fill-available;
+  }
+  #container-pop-play {
+    width: 85% !important;
+  }
+  #img-aba-content-play {
+    width: 60px !important;
+    left: 0rem !important;
+  }
+  .h1-pop-play {
+    font-size: 18pt !important;
+  }
+  .p-pop {
+    font-size: 12pt !important;
+    line-height: 1.3 !important;
+  }
+  #ul-nav-regras {
+    left: 0rem !important;
+    width: 95% !important;
+  }
+  #ul-nav-regras li {
+    padding: 2px !important;
+  }
+  .abasPagination > a {
+    width: 50px !important;
+  }
+  #secpag-3 {
+    left: -20px;
+    justify-content: center;
+  }
+  #secpag-4 {
+    left: -20px;
+    justify-content: center;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 9rem !important;
+    top: 25rem !important;
+  }
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  article {
+    margin-top: -20px !important;
+    width: 80% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  ul {
+    list-style: none !important;
+    padding-inline-start: 0px;
+    width: fit-content;
+  }
+  #secpag-1,
+  #secpag-2 {
+    width: 100% !important;
+    padding: 0 50px 0 50px;
+  }
+  #secpag-1 hr,
+  #secpag-2 hr {
+    margin-left: 0rem !important;
+  }
+  #img-memory-mask {
+    width: 20rem !important;
+  }
+  .value-dificult,
+  .value-velocity,
+  .value-level,
+  .value-mode {
+    width: 150px !important;
+  }
+  input[type="range"] {
+    width: 150px !important;
+  }
+  .content-credits {
+    width: 95% !important;
+    left: 0.7rem !important;
+  }
+  .div-p-credits {
+    margin: 1rem !important;
+    margin-top: 12rem !important;
+    line-height: 1.8rem !important;
+  }
+  .div-p-credits ul {
+    margin-left: -10px !important;
+  }
+  #ul-abas {
+    width: 90% !important;
+  }
+  #h1-rules {
+    font-size: larger !important;
+  }
+  .li-rules {
+    font-size: smaller !important;
+  }
+
+  .p-pop-rules {
+    font-size: smaller !important;
+    line-height: 1.5 !important;
+    width: 23rem !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 13rem !important;
+    margin-top: 2rem;
+    width: 80px !important;
+  }
+  #imgInit-super-memory {
+    display: none !important;
+    /* width: 20rem !important; */
+  }
+
+  #div-h1-mensage {
+    width: 100% !important;
+    height: 12vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #control-two {
+    width: inherit;
+    height: 70px !important;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #div-h1-game-over {
+    font-size: small !important;
+  }
+  #img-super-memory {
+    width: 350px !important;
+    height: 40px !important;
+    top: 22rem !important;
+  }
+  #section-game-over {
+    width: 100% !important;
+  }
+  .h1-game-over {
+    top: 5rem !important;
+    font-size: 55px !important;
+  }
+  .super-genius-three {
+    width: 450px !important;
+    height: 450px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  .super-genius-two {
+    width: 350px !important;
+    height: 350px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  .super-genius-one {
+    width: 200px !important;
+    height: 200px !important;
+    border: solid 5px rgb(5, 1, 24) !important;
+    gap: 5px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+    font-size: 40pt !important;
+  }
+  #h1-congrats1 {
+    font-size: 30pt !important;
+  }
+}
 @media only screen and (min-device-width: 720px) and (max-device-width: 1600px) {
   .content {
     position: fixed !important;
@@ -930,7 +1119,7 @@ img:hover {
     font-size: smaller !important;
   }
   #pop-configuracoes {
-    left: 19rem !important;
+    left: 23.5rem !important;
     top: 17rem !important;
   }
   .p-pop-rules {
@@ -1011,7 +1200,7 @@ img:hover {
     font-size: smaller !important;
   }
   #pop-configuracoes {
-    left: 19rem !important;
+    left: 25rem !important;
     top: 17rem !important;
   }
   .p-pop-rules {

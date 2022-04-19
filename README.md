@@ -39,7 +39,7 @@ Ademais:
 
 - O nosso projetão de **"Alô Mundo Dev."** ainda segue em implementação,  mas... 
 
-  ### Enquantto isso, alguns dos projetos constantes aqui no GitHub estarão em testes na nossa página:
+  ### Enquanto isso, alguns dos projetos constantes aqui no GitHub estarão em testes na nossa página:
   - 👉Temporário - [Gootopps.epizy.com](https://gootopps.epizy.com/) .
   - 👉Em construção - [Gootopps.com](https://gootopps.com/projects/games/super-memory/memory.html) .
 

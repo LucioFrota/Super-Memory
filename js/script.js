@@ -176,7 +176,7 @@ function getConfigValues() {
 
 function setTouchesColors() {
   if (inputConfig[2][1] == "Fácil") {
-    touchesColors = 1;
+    touchesColors = 8;
   } else if (inputConfig[2][1] == "Moderado") {
     touchesColors = 12;
   } else if (inputConfig[2][1] == "Difícil") {
@@ -543,9 +543,24 @@ function setPhase(num) {
 }
 
 // ---------------------------------------------------------------------------------------------
-
+function unlockAudioContext(audioCtx) {
+  if (context.state !== "suspended") return;
+  const b = document.body;
+  const events = ["touchstart", "touchend", "mousedown", "keydown"];
+  events.forEach((e) => b.addEventListener(e, unlock, false));
+  function unlock() {
+    audioCtx.resume().then(clean);
+  }
+  function clean() {
+    events.forEach((e) => b.removeEventListener(e, unlock));
+  }
+}
 function start() {
-  context = new (window.AudioContext || window.webkitAudioContext)();
+  if (!context) {
+    context = new (window.AudioContext || window.webkitAudioContext)();
+  }
+
+  unlockAudioContext(context);
   oscillator = context.createOscillator();
   contextGain = context.createGain();
   oscillator.frequency.value = frequency;
@@ -567,6 +582,7 @@ function activeDiv(element) {
   for (let i = 0; i < listDivs.length; i++) {
     if (element.id == listDivs[i].id) {
       frequency = listFreqs[i];
+
       stop();
       return null;
     }

@@ -17,10 +17,7 @@ Na sequência ele piscará esta mesma lente, e piscará mais uma. Então você d
 ficar atento sempre à próxima lente que irá ser adicionada. 
 <br>Isso se repetirá até o limite de luzes na sequência, sendo o máximo de 48 toques (até a última sequência da fase 3 do nível fácil).
 <br>Se você errar uma luz da sequência, ele emitirá um som e terminará o jogo(Game Over).
-<br>Você pode também jogar com os amigos, se unindo contra o Memory ou competindo entre si.
-    </ul></p>
-    <hr>
-</article>`;
+<br>Você pode também jogar com os amigos, se unindo contra o Memory ou competindo entre si.</ul></p><hr></article>`;
 var varSectionPag2 = `<article>
 <ul>
 <li class="li-rules"><Strong>Sequência Personalizada - Crie a sua sequência à cada toque</Strong> </li>
@@ -106,10 +103,10 @@ var varContentPlay = `<div class= "pop-class" id= "pop-play">
     <br> <br>
     Caso você esteja curioso por mais informações sobre esse e outros jogos da <strong> Milton Bradley </strong>
     <a href= "https://ludopedia.com.br/editora/464/Milton%20Bradley?v=sobre" target="_blank"> Tem um Montão Aqui! </a>
-    </p> <hr></section>
+    </p><hr></section>
     <div class="div-input-group" id= "div-input"> 
    <button class= "btn-play" id="btn-play" type= "button"
-    onclick= "playGame(1)"> Jogar </button> </div> </div> </button> </div>`;
+    onclick= "playGame(1)"> Jogar </button></div></div></button></div>`;
 
 const liRules = document.getElementById("aba-2");
 let element = document.getElementById("btn-rules");

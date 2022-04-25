@@ -7,7 +7,7 @@
 ------
 
 Desafio de projeto prático constante na plataforma [**Digital Inovation One**](https://web.dio.me/) , utilizando HTML, CSS e Javascript, pedida aos developers no intuito de reforçar o conhecimento criando um jogo tipo memória. 
-Nesse projeto, o desafio foi criar um jogo Gênius utilizando apenas HTML, CSS e Javascript de forma introdutória, sendo o principal conceito, CSS Grid, manipulação de Array e Arrow Functions.. Neste projeto, especificamente, o jogos será publicado de forma que possa ser acessados via browser.
+Nesse projeto, o desafio foi criar um jogo Gênius utilizando apenas HTML, CSS e Javascript de forma introdutória, sendo o principal conceito, CSS Grid, manipulação de Array e Arrow Functions.. Neste projeto, especificamente, o jogo será publicado de forma que possa ser acessados via browser.
 
 Conteúdo e propósito devidamente assimilados.
 Nesse caso ainda há vários tópicos a serem esmiuçados:
@@ -32,7 +32,7 @@ Procurei aqui brincar bastante com o código e implementei algumas considerávei
 
 - Apesar de bem timidamente, foram feitas implementações de Media Queries para algumas Telas tipo Notebook e Celulares. 
 - Ainda estarei brincando bastante com esse projeto e como isso, virão várias novidades relacionadas pela frente.
-Na verdade ainda haveria muita coisa a se fazer, porém o tempo urge e o trem da vida está à pleno vapor.
+Na verdade ainda haveria muita coisa a se fazer neste momento, porém o tempo urge e o trem da vida está à pleno vapor.
 
 
 Ademais:

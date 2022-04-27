@@ -446,12 +446,15 @@ img:hover {
   margin-top: 5rem;
 }
 /* --------------Média Queries----------- */
-@media only screen and (min-device-width: 412px) and (max-device-width: 914px) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 725px) {
   .content {
     position: fixed !important;
     left: 3% !important;
     width: 95% !important;
     height: -webkit-fill-available;
+  }
+  #img-aba-logoMemory {
+    margin-left: 2rem !important;
   }
   #container-pop-play {
     width: 85% !important;
@@ -484,6 +487,7 @@ img:hover {
   #secpag-4 {
     left: 0px !important;
     justify-content: center;
+    top: 90px !important;
   }
 
   #footer,
@@ -491,7 +495,7 @@ img:hover {
     font-size: smaller !important;
   }
   #pop-configuracoes {
-    left: 6.5rem !important;
+    left: 7.5rem !important;
     top: 13rem !important;
   }
   .btn-input-submit {
@@ -533,7 +537,7 @@ img:hover {
   #secpag-2 {
     width: 90% !important;
     left: -1rem !important;
-    top: 50px !important;
+    top: 5rem !important;
   }
 
   #secpag-1 hr,
@@ -574,6 +578,7 @@ img:hover {
   }
   #ul-abas {
     width: 90% !important;
+    left: auto;
   }
   #h1-rules {
     font-size: larger !important;
@@ -583,7 +588,7 @@ img:hover {
     font-size: small !important;
     width: 23rem;
     margin-left: 0px;
-    margin-top: 40px !important;
+    margin-top: 20px !important;
   }
 
   .p-pop-rules {
@@ -671,7 +676,7 @@ img:hover {
     font-size: 30pt !important;
   }
 }
-@media only screen and (min-device-width: 419px) and (max-device-width: 800px) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 667px) {
   .content {
     position: fixed !important;
     left: 3% !important;
@@ -690,8 +695,11 @@ img:hover {
     font-size: 12pt !important;
   }
   .p-pop {
-    font-size: 9pt !important;
+    font-size: 8pt !important;
     line-height: 1.3 !important;
+  }
+  #container-selects {
+    margin-top: 12rem;
   }
   #ul-nav-regras {
     top: 0px;
@@ -708,7 +716,8 @@ img:hover {
   #secpag-3,
   #secpag-4 {
     left: 0px !important;
-    justify-content: center;
+    justify-content: flex-end;
+    top: 5rem !important;
   }
 
   #footer,
@@ -717,7 +726,7 @@ img:hover {
   }
   #pop-configuracoes {
     left: 6.5rem !important;
-    top: 13rem !important;
+    top: 11rem !important;
   }
   .btn-input-submit {
     margin-top: 0rem !important;
@@ -730,7 +739,7 @@ img:hover {
   #article-credits {
     margin-top: -10px !important;
     width: 100% !important;
-
+    font-size: small;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -749,21 +758,21 @@ img:hover {
     left: 20px;
   }
   hr {
-    margin-left: 0px;
+    margin-left: 1rem;
   }
   .aba {
     width: 8rem !important;
   }
   #secpag-1,
   #secpag-2 {
+    justify-content: flex-end;
     width: 90% !important;
-    left: -1rem !important;
-    top: 50px !important;
+    top: 80px !important;
   }
 
   #secpag-1 hr,
   #secpag-2 hr {
-    margin-left: 0rem !important;
+    margin-left: 1rem !important;
   }
   #img-memory-mask {
     width: 20rem !important;
@@ -791,7 +800,7 @@ img:hover {
   }
   .div-p-credits {
     margin: 1rem !important;
-    margin-top: 12rem !important;
+    margin-top: 9rem !important;
     line-height: 1.3rem !important;
   }
   .div-p-credits ul {
@@ -806,19 +815,20 @@ img:hover {
   }
   .li-rules {
     font-size: small !important;
-    width: 23rem;
-    margin-left: 0px;
+    width: 20rem;
+    margin-left: 1rem;
     margin-top: 40px !important;
   }
 
   .p-pop-rules {
-    font-size: small !important;
+    font-size: 1.15em !important;
     line-height: 1.3 !important;
-    width: 23rem !important;
+    width: 20rem !important;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 1rem;
   }
   #abasPagination {
     z-index: 16;
@@ -828,7 +838,7 @@ img:hover {
     font-size: large !important;
   }
   #logo {
-    left: 11rem !important;
+    left: 9rem !important;
     margin-top: 2rem;
     width: 80px !important;
   }
@@ -856,7 +866,8 @@ img:hover {
     right: 2rem !important;
   }
   #div-h1-game-over {
-    font-size: small !important;
+    font-size: x-small !important;
+    width: 95%;
   }
   #img-super-memory {
     width: 250px !important;
@@ -896,7 +907,7 @@ img:hover {
     font-size: 30pt !important;
   }
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 960px) {
+@media only screen and (min-device-width: 485px) and (max-device-width: 922px) {
   .content {
     position: fixed !important;
     left: 3% !important;
@@ -949,8 +960,9 @@ img:hover {
     margin-block-end: 0.7em !important;
   }
   article {
-    margin-top: -20px !important;
-    width: 80% !important;
+    margin-top: 20px !important;
+    margin-left: auto;
+    width: 95% !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -962,7 +974,9 @@ img:hover {
   #secpag-1,
   #secpag-2 {
     width: 100% !important;
-    padding: 0 50px 0 50px;
+    left: 0px !important;
+    justify-content: flex-end;
+    top: 5rem !important;
   }
   #secpag-1 hr,
   #secpag-2 hr {
@@ -999,18 +1013,23 @@ img:hover {
     font-size: larger !important;
   }
   .li-rules {
-    font-size: smaller !important;
+    margin-top: 2rem !important;
+  }
+  #secpag-3,
+  #secpag-4 {
+    left: 0px !important;
+    justify-content: flex-end;
+    top: 5rem !important;
   }
 
   .p-pop-rules {
-    font-size: smaller !important;
+    font-size: 1.3em !important;
     line-height: 1.5 !important;
-    width: 23rem !important;
+    width: auto !important;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -10px;
   }
   #h1-level,
   #h1-nivSequence {
@@ -1085,7 +1104,122 @@ img:hover {
     font-size: 30pt !important;
   }
 }
-@media only screen and (min-device-width: 720px) and (max-device-width: 1600px) {
+/* For 1366 Resolution */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (orientation: landscape) {
+  p {
+    line-height: 1rem !important;
+    margin-block-start: 0.7em !important;
+    margin-block-end: 0.7em !important;
+  }
+  #container-pop-play {
+    margin-top: -20px;
+  }
+  .btn-credits {
+    margin-top: -5rem !important;
+  }
+  #control-two {
+    height: 70px;
+  }
+  .h2-left {
+    left: 2rem !important;
+  }
+  .h2-right {
+    right: 2rem !important;
+  }
+  #img-aba-content-play {
+    width: 80px !important;
+    left: 10rem !important;
+  }
+  .h1-pop-play {
+    font-size: 20pt;
+    color: coral;
+  }
+  .p-pop {
+    font-size: smaller !important;
+  }
+  #footer,
+  #footer-rules {
+    font-size: smaller !important;
+  }
+  #pop-configuracoes {
+    left: 18.5rem !important;
+    top: 15rem !important;
+  }
+  .pop-config {
+    margin-top: 10rem !important;
+  }
+  .btn-input-submit {
+    margin-top: 0rem !important;
+  }
+  .li-rules {
+    font-size: medium !important;
+    margin-top: initial !important;
+  }
+  #img-logo-mask {
+    width: 4rem !important;
+  }
+  #img-memory-mask {
+    width: 20rem !important;
+    top: 5rem !important;
+  }
+  .div-img-mask {
+    margin-top: 15px;
+  }
+  .div-p-credits {
+    margin-top: 6rem;
+    font-size: small;
+  }
+  .p-pop-rules {
+    line-height: 1.5 !important;
+    font-size: smaller !important;
+  }
+  #h1-level,
+  #h1-nivSequence {
+    font-size: large !important;
+  }
+  #logo {
+    left: 12em !important;
+    width: 100px !important;
+  }
+  #imgInit-super-memory {
+    width: 20rem !important;
+  }
+  #div-h1-mensage {
+    width: 70% !important;
+    height: 7vw !important;
+    gap: 60px !important;
+  }
+  h2 {
+    font-size: large !important;
+  }
+  #div-h1-game-over {
+    font-size: smaller !important;
+  }
+  #section-game-over {
+    align-items: flex-end !important;
+    margin-bottom: auto !important;
+  }
+  #img-super-memory {
+    width: 450px !important;
+    top: 22rem !important;
+  }
+  .super-genius-three {
+    width: 600px !important;
+    height: 600px !important;
+  }
+  .super-genius-two {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  .super-genius-one {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #h1-congrats {
+    top: 2rem !important;
+  }
+}
+/* @media only screen and (min-device-width: 720px) and (max-device-width: 1600px) {
   .content {
     position: fixed !important;
     left: 3% !important;
@@ -1211,7 +1345,7 @@ img:hover {
   }
   #imgInit-super-memory {
     display: none !important;
-    /* width: 20rem !important; */
+
   }
 
   #div-h1-mensage {
@@ -1272,7 +1406,7 @@ img:hover {
   #h1-congrats1 {
     font-size: 30pt !important;
   }
-}
+} */
 /* For 1024 Resolution */
 @media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
   .content {
@@ -1545,86 +1679,7 @@ img:hover {
     top: 2rem !important;
   }
 }
-/* For 1366 Resolution */
-@media only screen and (min-width: 1030px) and (max-width: 1366px) and (orientation: landscape) {
-  p {
-    line-height: 1rem !important;
-    margin-block-start: 0.7em !important;
-    margin-block-end: 0.7em !important;
-  }
-  #control-two {
-    height: 70px;
-  }
-  .h2-left {
-    left: 2rem !important;
-  }
-  .h2-right {
-    right: 2rem !important;
-  }
-  #img-aba-content-play {
-    width: 80px !important;
-    left: 10rem !important;
-  }
-  .h1-pop-play {
-    font-size: 20pt;
-    color: coral;
-  }
-  .p-pop {
-    font-size: smaller;
-  }
-  #footer,
-  #footer-rules {
-    font-size: smaller !important;
-  }
-  #pop-configuracoes {
-    left: 23.5rem !important;
-    top: 17rem !important;
-  }
-  .p-pop-rules {
-    line-height: 1.5 !important;
-  }
-  #h1-level,
-  #h1-nivSequence {
-    font-size: large !important;
-  }
-  #logo {
-    left: 12em !important;
-    width: 100px !important;
-  }
-  #imgInit-super-memory {
-    width: 20rem !important;
-  }
-  #div-h1-mensage {
-    width: 70% !important;
-    height: 7vw !important;
-    gap: 60px !important;
-  }
-  h2 {
-    font-size: large !important;
-  }
-  #div-h1-game-over {
-    font-size: large !important;
-  }
-  #img-super-memory {
-    width: 450px !important;
-    top: 22rem !important;
-  }
-  .super-genius-three {
-    width: 700px !important;
-    height: 700px !important;
-  }
-  .super-genius-two {
-    width: 500px !important;
-    height: 500px !important;
-  }
-  .super-genius-one {
-    width: 250px !important;
-    height: 250px !important;
-  }
-  #h1-congrats {
-    top: 2rem !important;
-  }
-}
+
 @media only screen and (min-width: 1400px) and (max-width: 1680px) {
   /* STYLES GO HERE */
   p {

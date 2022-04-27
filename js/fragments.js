@@ -21,7 +21,7 @@ ficar atento sempre à próxima lente que irá ser adicionada.
 var varSectionPag2 = `<article>
 <ul>
 <li class="li-rules"><Strong>Sequência Personalizada - Crie a sua sequência à cada toque</Strong> </li>
-<p class="p-pop-rules"><Strong>Quantidade de Jogadores</Strong> 
+<p class="p-pop-rules"> 
 <br><Strong>1 Jogador:</Strong> 
 <br>Neste modo de jogo, o Memory só dá o primeiro sinal. Depois disso você que cria sua própria sequência, 
 repetindo o sinal dado, e já incrementando um sinal seu na sequência.
